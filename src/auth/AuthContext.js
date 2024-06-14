@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (userData) => {
     try {
       // Make API request to authenticate user
-      const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('https://satisfinds-backend-v1.onrender.com:10000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
   const signup = async (userData) => {
     try {
       // Make API request to sign up user
-      const response = await fetch('http://localhost:3001/api/signup', {
+      const response = await fetch('https://satisfinds-backend-v1.onrender.com:10000/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
