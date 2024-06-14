@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (userData) => {
     try {
       // Make API request to authenticate user
-      const response = await fetch('https://localhost/api/login', {
+      const response = await fetch('https://localhost:10000/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
